@@ -12,6 +12,7 @@ public class Control {
 					"1 to Enter Intern Data, 2 to see the Intern Data , 3 to search Intern, 4 to Remove Intern");
 			Scanner in = new Scanner(System.in);
 			int option = in.nextInt();
+			in.close();
 			switch (option) {
 			case 1:
 				h.addintern(dh);

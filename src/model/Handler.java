@@ -1,7 +1,5 @@
 package model;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Handler {
@@ -16,7 +14,6 @@ public class Handler {
 	}
 
 	public void showDetails(DataHolder holder) {
-		InternDetails details = new InternDetails();
 		View view = new View();
 		Map<Integer, InternDetails> list = holder.getdataholder();
 		for (Map.Entry<Integer, InternDetails> m : list.entrySet()) {
@@ -26,7 +23,6 @@ public class Handler {
 	}
 
 	public void GetDetails(DataHolder holder, int key) {
-		InternDetails details = new InternDetails();
 		View view = new View();
 		Map<Integer, InternDetails> list = holder.getdataholder();
 		view.showDetails(list.get(key));
@@ -34,7 +30,6 @@ public class Handler {
 	}
 
 	public void removeDetails(DataHolder holder, int key) {
-		InternDetails details = new InternDetails();
 		View view = new View();
 		Map<Integer, InternDetails> list = holder.getdataholder();
 		view.showDetails(list.remove(key));
